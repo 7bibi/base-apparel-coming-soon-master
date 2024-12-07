@@ -56,13 +56,16 @@
     --fontSize: 16px;
 
 }
+html, body {
+  height: 100%;
+}
 
 body {
   background-image: url(images/bg-pattern-desktop.svg);
   font-family: var(--fontStyle);
   font-size: var(--fontSize);
-  max-height: 100vh;
   background-size: cover;
+  overflow: hidden;
 }
 
 div.center {
@@ -157,8 +160,6 @@ div#error-text {
   height: 0;
   overflow: hidden;
 }
-
-
 
 @media (min-width: 1440px) {
 
